@@ -1,0 +1,14 @@
+<!-- templates/base.html -->
+<html>
+
+<body>
+    <header>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'articles' %}">Articles</a>
+        <a href="{% url 'about' %}">About</a>
+    </header>
+    {% block content %}
+    {% endblock content %}
+</body>
+
+</html>
